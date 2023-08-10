@@ -1,0 +1,88 @@
+<h1>Add a New Hire</h1>
+
+<!-- form fields -->
+<div class="form-fields-container">
+    <!-- employee id -->
+    <label>Employee ID</label>
+    <input type="text" 
+    placeholder="Enter New Hire's employee_id"
+    [(ngModel)] = "employee.employee_id"/>
+
+    <!-- first name -->
+    <label>Employee First Name</label>
+    <input type="text" 
+    placeholder="Enter New Hire's first Name"
+    [(ngModel)] = "employee.first_name"/>
+
+    <!-- last name -->
+    <label>Employee Last Name</label>
+    <input type="text" placeholder="Enter New Hire's last Name"
+    [(ngModel)] = "employee.last_name"/>
+
+    <!-- email -->
+    <label>Employee Email</label>
+    <input type="text" placeholder="Enter New Hire's Email"
+    [(ngModel)] = "employee.email"/>
+
+    <!-- phone Number -->
+    <label>Employee Phone Number</label>
+    <input type="text" placeholder="Enter New Hire's Phone Number"
+    [(ngModel)] = "employee.phone"/>
+
+    <!-- Hire Date -->
+    <label>Employee Hire Date</label>
+    <input type="text" placeholder="Hire Date"
+    [(ngModel)] = "employee.hire_date" 
+    (ngModelChange)="formatDate($event)"/>
+
+    <!-- Salary -->
+    <label>Employee Salary</label>
+    <input type="text" placeholder="Enter New Hire's Salary"
+    [(ngModel)] = "employee.salary"/>
+   
+    <!-- Dropdown jobID -->
+    <label>Select the jobID</label>
+    <select [(ngModel)]="employee.job_id">
+      <option value="">----Select----</option>
+      <!-- Loop through the options array and create an option element for each option -->
+      <option *ngFor="let job_id_option of job_id_options" [value]="job_id_option.job_id">{{ job_id_option.job_id }}&nbsp;{{ job_id_option.job_title }}</option>
+    </select>
+
+ <!-- Dropdown ManagerID -->
+ <label>Select the Manager's ID</label>
+ <select [(ngModel)]="employee.manager_id">
+   <option value="">----Select----</option>
+   <!-- Loop through the options array and create an option element for each option -->
+   <option *ngFor="let manager_id_option of manager_id_options" [value]="manager_id_option.employee_id">{{ manager_id_option.employee_id }}  {{ manager_id_option.first_name }}  {{ manager_id_option.last_name }}</option>
+ </select>
+
+  <!-- Dropdown deptID -->
+  <label>Select the Department's ID</label>
+  <select [(ngModel)]="employee.department_id">
+    <option value="">----Select----</option>
+    <!-- Loop through the options array and create an option element for each option -->
+    <option *ngFor="let department_id_option of department_id_options" [value]="department_id_option.department_id">{{department_id_option.department_id}} {{department_id_option.department_name }}</option>
+  </select>
+
+    <button (click)="addBtnPressed()">Add a new Hire</button>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+
+    <div *ngIf="successMessage" class="error-message">
+      {{ successMessage }}
+    </div>
+</div>
+<!-- // end form fields container -->
+
+<!--
+<p> Two way binding results here: </p>
+   <p>Employee's first name: <span class="results">{{employee.first_name}}</span></p>
+   <p>Employee's last name: <span class="results">{{employee.last_name}}</span></p>
+   <p>Employee's hire date: <span class="results">{{employee.hire_date}}</span></p>
+   <p>Employee's email <span class="results">{{employee.email}}</span></p>
+   <p>Employee's phoneNum <span class="results">{{employee.phone}}</span></p>
+   <p>Employee's JobID <span class="results">{{employee.job_id}}</span></p>
+   <p>Employee's ManagerID <span class="results">{{employee.manager_id}}</span></p>
+   
+-->

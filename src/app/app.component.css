@@ -1,0 +1,31 @@
+nav {
+  height:50px;
+  background-color: #004D40;    
+}
+ul.menu {
+  padding-top:15px;
+  display:flex;    
+  flex-direction: row;    
+  justify-content: space-evenly;
+  /* remove bullets */
+  list-style-type:none;
+}
+ul.menu li {
+  display:inline-block;    
+}
+ul.menu li a {
+  text-decoration:none;
+  color:#fff;
+}
+ul.menu li a:hover {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.page-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  height:100vh;       
+}

@@ -1,0 +1,32 @@
+div.form-fields-container {
+  width:40vw;    
+  margin-top:20px;
+
+}
+input, label, select, button {
+  display:block;
+  margin:6px 0px; 
+}
+input[type="text"], button {
+  width:100%;
+}
+input, select, button {
+  padding:10px 8px;
+}
+
+label.lbl-radio-text, input[type="radio"] {
+  display:inline-block;
+  margin-right:5px;
+}
+span.results {
+  display:inline-block;
+  padding:10px 5px;
+  background-color:yellow;
+}
+.error-message{
+  font-family:Arial, Helvetica, sans-serif;
+  color:red;
+  font-size: smaller;
+  font-weight: bold;
+  
+}
