@@ -5,13 +5,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Setting Up the Environment to Run Angular Code
 These instructions will guide you through the process of setting up your development environment to run the Angular code from your GitHub repository.
 
-Prerequisites
+## Prerequisites
 Before you begin, make sure you have the following software installed on your computer:
 
 Node.js and npm: Angular requires Node.js, which includes npm (Node Package Manager), to manage packages and dependencies.
 
 Download and install Node.js and npm from the official website: https://nodejs.org/
-Clone the Repository
+
+## Clone the Repository
+
 Clone the Repository: Start by cloning your Angular project repository from GitHub to your local machine. You can use either the command line or a Git GUI client. Replace your-repo-url with the actual URL of your GitHub repository.
 
 `git clone your-repo-url`
@@ -19,15 +21,10 @@ Navigate to the Project Directory: Change into the project directory using the c
 
 
 `cd your-repo-directory`
-Install Dependencies
-Install Angular CLI: If you don't have Angular CLI installed globally, you can install it using npm:
+## Install Dependencies
+Install Angular CLI: If you don't have Angular CLI installed globally, you can install it using npm: `npm install -g @angular/cli`
 
-
-`npm install -g @angular/cli`
-Install Project Dependencies: Inside your project directory, install the project-specific dependencies using npm:
-
-`npm install`
-
+Install Project Dependencies: Inside your project directory, install the project-specific dependencies using npm: `npm install` , if you are experiencing the difficuties, please remove the module folder and rerun the command: `npm install`
 
 
 ## Development server
