@@ -14,34 +14,21 @@ Download and install Node.js and npm from the official website: https://nodejs.o
 Clone the Repository
 Clone the Repository: Start by cloning your Angular project repository from GitHub to your local machine. You can use either the command line or a Git GUI client. Replace your-repo-url with the actual URL of your GitHub repository.
 
-sh
-Copy code
-git clone your-repo-url
+`git clone your-repo-url`
 Navigate to the Project Directory: Change into the project directory using the command:
 
-sh
-Copy code
-cd your-repo-directory
+
+`cd your-repo-directory`
 Install Dependencies
 Install Angular CLI: If you don't have Angular CLI installed globally, you can install it using npm:
 
-sh
-Copy code
-npm install -g @angular/cli
+
+`npm install -g @angular/cli`
 Install Project Dependencies: Inside your project directory, install the project-specific dependencies using npm:
 
-sh
-Copy code
-npm install
-Run the Application
-Start the Development Server: To run your Angular application locally, use the following command:
+`npm install`
 
-sh
-Copy code
-ng serve
-This will start the development server. By default, your application will be accessible at http://localhost:4200/.
 
-Access the Application: Open your web browser and navigate to http://localhost:4200/ to view and interact with your Angular application.
 
 ## Development server
 
